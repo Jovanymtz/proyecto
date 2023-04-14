@@ -1,53 +1,25 @@
-<HTML>	
-    <HEAD>
-    
-    <title>contactanos</TITLE>
-    <style>
-    .centradoVerde{
-     font-family:Verdana;
-     font-size: 15px;
-     background-color: #9CFFAB;
-     height:40px;
-     }
-    body{
-    padding:5px;
-    }
-    table a{
-    text-decoration:none;
-    color:black;
-    }
-    #menu{
-    width:250px;
-    }
-    </style>
-    </HEAD>
-    <BODY background="utpn.jpg">
-    <center><img src="tenis.jpg" Width="600px" height="300px"></center><br><br><br>
-    <table id="menu" border="solid" align="center">
-    <tr>
-    </tr>
-     <td><b><font align="center"size=8><a href="index.html">Regresar</a></font></b></td>
-     </table>
-     <title>formulario<title>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+        <title>Formulario de contacto</title>
+        <link href="css/form.css" rel="stylesheet" />
     </head>
     <body>
-    <h2>formulario</h2>
-    <form action="guardar.php" method="POST" id="contact_form" runat="server" enctype="multipart/form-data">
-    
-         <td> <strong><label for="Nombre">Nombre:</label></td> </strong>
-    <input type="text" id="Nombre" name="Nombre" maxlength="30"required>
-    
-    <td> <strong><label for="Apellidos">Apellidos:</label></td> </strong>
-    <input type="text" id="Apellidos" name="Apellidos" maxlength="60"required>
-    
-    <td> <strong><label for="Calle">Calle:</label></td> </strong>
-    <input type="text" id="Calle" name="Calle" maxlength="60"required>
- 
-    
-    <button class="submit" type="submit">Enviar Registro</button>
-     <center> <br><br><br>
-    <td><a href="https://www.facebook.com/Desponchadora-Pancho-102184355092750"><img  src="facebook.png" alt="" width="50 height="50"> 
-    <td><a href="https://wa.me/qr/2UCVWQRRCTDIB1"><img  src="mensaje.png" alt="" width="50 height="50"> 
-    </tr>  
-    </BODY>
-    </HTML>
+
+        <h2>Formulario de Contacto</h2>
+        <form action="guardar.php" method="POST" id="contact_form" runat="server" enctype="multipart/form-data">
+
+            <label for="Nombre">Nombre:</label><br>
+            <input type="text" id="Nombre" name="Nombre" maxlength="30"required ><br>
+
+            <label for="Apellido">Apellidos:</label><br>
+            <input type="text" id="Apellido" name="Apellido" maxlength="60"required ><br>
+
+            <label for="Calle">Calle:</label><br>
+            <input type="text" id="Calle" name="Calle" maxlength="60"required ><br>
+
+            <button class="submit" type="submit">Enviar Registro</button>
+        </form>
+    </body>
+</html>
